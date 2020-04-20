@@ -4,12 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Texon - Contacto</title>
+    <title>Texon</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/Texon/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
@@ -50,16 +50,8 @@
                                         <div class="header_right d-flex align-items-center">
                                             <div class="short_contact_list">
                                                 <ul>
-                                                  <li>
-                                                    <a href="#" onclick="mailCopy()" id="mail">
-                                                      <i class="fa fa-envelope"></i> info@texon-ing.com.ar
-                                                    </a>
-                                                  </li>
-                                                  <li>
-                                                    <a href="#" onclick="numberCopy()" id="number">
-                                                      <i class="fa fa-phone"></i> + 54 3543 402356
-                                                    </a>
-                                                  </li>
+                                                    <li><a href="#"> <i class="fa fa-envelope"></i> info@texon-ing.com.ar</a></li>
+                                                    <li><a href="#"> <i class="fa fa-phone"></i> + 54 3543 402356</a></li>
                                                 </ul>
                                             </div>
 
@@ -147,7 +139,7 @@
     <section class="contact-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-10 offset-lg-1">
+                    <div class="col-lg-3 offset-lg-1">
                         <div class="media contact-info">
                             <span class="contact-info__icon"><i class="ti-home"></i></span>
                             <div class="media-body">
@@ -158,14 +150,14 @@
                         <div class="media contact-info">
                             <span class="contact-info__icon"><i class="ti-tablet"></i></span>
                             <div class="media-body">
-                                <a href="#" onclick="numberCopy()" id="number2"><h3>Tel. + 54 3543 402356</h3></a>
+                                <h3>Tel. + 54 3543 402356</h3>
                                 <p>Lunes a Viernes de 9 a 18hs</p>
                             </div>
                         </div>
                         <div class="media contact-info">
                             <span class="contact-info__icon"><i class="ti-email"></i></span>
                             <div class="media-body">
-                                <a href="#" onclick="mailCopy()" id="mail2"><h3>info@texon-ing.com.ar</h3></a>
+                                <h3>info@texon-ing.com.ar</h3>
                                 <p>Envianos cualquier consulta.</p>
                             </div>
                         </div>
@@ -173,27 +165,39 @@
                 </div>
             </div>
         </section>
-
     <!-- ================ contact section end ================= -->
 
-    <!-- contact_action_area  -->
-    <div class="contact_action_area">
+    <!-- contact_location  -->
+    <!-- <div class="contact_location">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-xl-7 col-md-6">
-                    <div class="action_heading">
-                        <h3>Calidad garantizada</h3>
-                        <p>Nuestros capacitados ingenieros nos permiten ofrecer la garantia de un producto de calidad, en periodos de tiempo reducidos a precios competitivos en cualquier lugar del mundo.</p>
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6">
+                    <div class="location_left">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="img/logo_head.png" alt="">
+                            </a>
+                        </div>
+
                     </div>
                 </div>
-                <div class="col-xl-5 col-md-6">
-                    <div class="call_add_action">
-                        <a href="#" class="boxed-btn3">Quienes somos</a>
+                <div class="col-xl-3 col-md-3">
+                    <div class="single_location">
+                        <h3> <img src="img/icon/location_icon.png" alt="" height="25px"> Ubicación</h3>
+                        <p>Ramón y Cajal 6141 – Argüello - Córdoba - Argentina</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-3">
+                    <div class="single_location">
+                        <h3> <img src="img/icon/contact_icon.png" alt="" height="25px"> Contacto</h3>
+                        <p>Tel. + 54 3543 402356 <br> info@texon-ing.com.ar</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+
+    <!--/ contact_location  -->
 
 
     <!-- footer start -->
@@ -275,9 +279,16 @@
     </footer>
         <!--/ footer end  -->
       <!-- Modal -->
-      <div class="alert alert-info my_alert" id="alert" role="alert">
-        Texto copiado en portapapeles.
+  <div class="modal fade custom_search_pop" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="serch_form">
+            <input type="text" placeholder="search" >
+            <button type="submit">search</button>
+        </div>
       </div>
+    </div>
+  </div>
         <!-- JS here -->
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="js/vendor/jquery-1.12.4.min.js"></script>

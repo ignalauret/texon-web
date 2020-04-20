@@ -843,38 +843,6 @@ h3 {
   top: -9px;
 }
 
-/* line 78, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slick-nav.scss */
-.slicknav_btn {
-  background-color: transparent;
-  cursor: pointer;
-  margin-bottom: 10px;
-  position: relative;
-  z-index: 99;
-  border: none;
-  border-radius: 3px;
-  top: 5px;
-  padding: 5px;
-  right: 5px;
-  margin-top: -5px;
-  top: -31px;
-}
-
-/* line 92, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slick-nav.scss */
-.slicknav_btn {
-  background-color: transparent;
-  cursor: pointer;
-  margin-bottom: 10px;
-  position: relative;
-  z-index: 99;
-  border: none;
-  border-radius: 3px;
-  top: 5px;
-  padding: 5px;
-  right: 0;
-  margin-top: -5px;
-  top: -33px;
-}
-
 /* line 107, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slick-nav.scss */
 .slicknav_btn {
   background-color: transparent;
@@ -1357,7 +1325,7 @@ h3 {
 .header-area .search_btn a {
   width: 35px;
   height: 35px;
-  background: #456BA5;
+  background: #ffffff;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -3875,7 +3843,7 @@ span.ui-slider-handle.ui-corner-all.ui-state-default:focus {
 
 /* line 1, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_transport.scss */
 .transportaion_area {
-  padding: 120px 0 90px 0;
+  padding: 30px 0 90px 0;
 }
 
 @media (max-width: 767px) {
@@ -3899,15 +3867,19 @@ span.ui-slider-handle.ui-corner-all.ui-state-default:focus {
 }
 
 /* line 12, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_transport.scss */
-.transportaion_area .single_transport .icon {
-  height: 50px;
+.transportaion_area .single_transport .icon img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* line 15, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_transport.scss */
-.transportaion_area .single_transport h3 {
-  font-size: 22px;
+.transportaion_area .single_transport h4 {
+  font-size: 20px;
   font-weight: 500;
   color: #001D38;
+  width: 100%;
+  text-align: center;
   margin-top: 15px;
   margin-bottom: 15px;
   -webkit-transition: 0.3s;
@@ -3925,7 +3897,7 @@ span.ui-slider-handle.ui-corner-all.ui-state-default:focus {
 }
 
 /* line 30, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_transport.scss */
-.transportaion_area .single_transport:hover h3 {
+.transportaion_area .single_transport:hover h4 {
   color: #456BA5;
 }
 
@@ -7189,6 +7161,10 @@ h6 {
   border-top: 1px dotted #eee;
 }
 
+.section-top-border img {
+  margin-bottom: 10px;
+}
+
 /* line 1093, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_elements.scss */
 .mb-30 {
   margin-bottom: 30px;
@@ -8871,5 +8847,29 @@ h6 {
 .links_interes li {
   margin-top: 20px;
 }
+
+.language a {
+  font-size: 16px;
+  color: #596672;
+}
+
+.language a:hover {
+  color: #456BA5;
+}
+
+.language img {
+  margin-left: 5px;
+}
+
+.my_alert {
+  visibility: hidden;
+  background: #412F73;
+  color: #fff;
+  border: 0px;
+  position: fixed;
+  bottom: 40px;
+  right: 80px;
+}
+
 
 /*# sourceMappingURL=style.css.map */

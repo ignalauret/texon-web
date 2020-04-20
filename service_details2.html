@@ -4,12 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Transportion</title>
+    <title>Texon - Unidades de Negocio</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="img/Texon/favicon.ico">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
@@ -51,10 +51,19 @@
                             <div class="col-xl-8 col-md-8">
                                 <div class="header_right d-flex align-items-center">
                                     <div class="short_contact_list">
-                                        <ul>
-                                            <li><a href="#"> <i class="fa fa-envelope"></i> info@texon-ing.com.ar</a></li>
-                                            <li><a href="#"> <i class="fa fa-phone"></i> + 54 3543 402356</a></li>
-                                        </ul>
+                                      <ul>
+                                          <li>
+                                            <a href="#" onclick="mailCopy()" id="mail">
+                                              <i class="fa fa-envelope"></i> info@texon-ing.com.ar
+                                            </a>
+                                          </li>
+                                          <li>
+                                            <a href="#" onclick="numberCopy()" id="number">
+                                              <i class="fa fa-phone"></i> + 54 3543 402356
+                                            </a>
+                                          </li>
+                                      </ul>
+
                                     </div>
 
                                     <!-- <div class="book_btn d-none d-lg-block">
@@ -293,7 +302,6 @@
 
     <!--/ contact_location  -->
 
-
     <!-- footer start -->
     <footer class="footer">
         <div class="footer_top">
@@ -305,11 +313,11 @@
                                 Unidades de Negocio
                             </h3>
                             <ul>
-                                <li><a href="service_details.html">Sistemas de admisión y tratamiento de aire</a></li>
-                                <li><a href="service_details.html">Diseño y cálculo de recipientes a presión</a></li>
-                                <li><a href="service_details.html">Diseño y cálculo de piezas, equipos o estructuras mecánicas.</a></li>
-                                <li><a href="service_details.html">Scanneado y digitalización en 3D</a></li>
-                                <li><a href="service_details.html">Proyectos mecánicos integrales.</a></li>
+                                <li><a href="service_details1.html">Sistemas de admisión y tratamiento de aire</a></li>
+                                <li><a href="service_details2.html">Diseño y cálculo de recipientes a presión</a></li>
+                                <li><a href="service_details4.html">Diseño y cálculo de piezas, equipos o estructuras mecánicas.</a></li>
+                                <li><a href="service_details3.html">Scanneado y digitalización en 3D</a></li>
+                                <li><a href="service_details1.html">Proyectos mecánicos integrales.</a></li>
                             </ul>
 
                         </div>
@@ -320,8 +328,8 @@
                                 Empresa
                             </h3>
                             <ul>
-                                <li><a href="#">Quienes somos</a></li>
-                                <li><a href="#">Contacto</a></li>
+                                <li><a href="about.html">Quienes somos</a></li>
+                                <li><a href="contact.html">Contacto</a></li>
                             </ul>
                         </div>
                     </div>
@@ -349,9 +357,9 @@
                                 Links de interes
                             </h3>
                             <ul>
-                                <li><a href="#"><img src="img/Texon/logo1.png" alt="" width="200px"></a></li>
-                                <li><a href="#"><img src="img/Texon/logo2.png" alt="" width="200px"></a></li>
-                                <li><a href="#"><img src="img/Texon/logo3.png" alt="" width="200px"></a></li>
+                                <li><a href="https://www.asme.org/" target="_blank"><img src="img/Texon/logo1.png" alt="" width="200px"></a></li>
+                                <li><a href="http://ciec.org.ar/contacto.php" target="_blank"><img src="img/Texon/logo2.png" alt="" width="200px"></a></li>
+                                <li><a href="https://www.3ds.com/es/" target="_blank"><img src="img/Texon/logo3.png" alt="" width="200px"></a></li>
                             </ul>
                         </div>
                     </div>
@@ -359,29 +367,22 @@
             </div>
         </div>
         <div class="copy-right_text">
-  				<div class="container">
-  					<div class="footer_border"></div>
-  					<div class="row">
-  						<div class="col-xl-12">
-  							<p class="copy_right text-center">
-  								© 2013 Texon - Servicios y proyectos de Ingeniería
-  							</p>
-  						</div>
-  					</div>
-  				</div>
-  			</div>
+          <div class="container">
+            <div class="footer_border"></div>
+            <div class="row">
+              <div class="col-xl-12">
+                <p class="copy_right text-center">
+                  © 2013 Texon - Servicios y proyectos de Ingeniería
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
     </footer>
 
   <!-- Modal -->
-  <div class="modal fade custom_search_pop" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="serch_form">
-            <input type="text" placeholder="search" >
-            <button type="submit">search</button>
-        </div>
-      </div>
-    </div>
+  <div class="alert alert-info my_alert" id="alert" role="alert">
+    Texto copiado en portapapeles.
   </div>
     <!-- JS here -->
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>

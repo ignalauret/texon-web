@@ -4,12 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Texon - Unidades de Negocio</title>
+    <title>Texon</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/Texon/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
@@ -51,19 +51,10 @@
                             <div class="col-xl-8 col-md-8">
                                 <div class="header_right d-flex align-items-center">
                                     <div class="short_contact_list">
-                                      <ul>
-                                          <li>
-                                            <a href="#" onclick="mailCopy()" id="mail">
-                                              <i class="fa fa-envelope"></i> info@texon-ing.com.ar
-                                            </a>
-                                          </li>
-                                          <li>
-                                            <a href="#" onclick="numberCopy()" id="number">
-                                              <i class="fa fa-phone"></i> + 54 3543 402356
-                                            </a>
-                                          </li>
-                                      </ul>
-
+                                        <ul>
+                                            <li><a href="#"> <i class="fa fa-envelope"></i> info@texon-ing.com.ar</a></li>
+                                            <li><a href="#"> <i class="fa fa-phone"></i> + 54 3543 402356</a></li>
+                                        </ul>
                                     </div>
 
                                     <!-- <div class="book_btn d-none d-lg-block">
@@ -156,12 +147,12 @@
                                 <h3>Unidades</h3>
                                 <div class="nav nav-pills" id="v-pills-tab" role="tablist"
                                     aria-orientation="vertical">
-                                    <a class="" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1"
-                                        role="tab" aria-controls="v-pills-1" aria-selected="false">Sistemas de admisión y tratamiento de aire.</a>
+                                    <a class=" active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1"
+                                        role="tab" aria-controls="v-pills-1" aria-selected="true">Sistemas de admisión y tratamiento de aire.</a>
                                     <a class="" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2"
                                         role="tab" aria-controls="v-pills-2" aria-selected="false">Diseño y cálculo de recipientes a presión</a>
-                                    <a class="active" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3"
-                                        role="tab" aria-controls="v-pills-3" aria-selected="true">Scanneado y digitalización en 3D.</a>
+                                    <a class="" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3"
+                                        role="tab" aria-controls="v-pills-3" aria-selected="false">Scanneado y digitalización en 3D.</a>
                                     <a class="" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4"
                                         role="tab" aria-controls="v-pills-4" aria-selected="false">Diseño y cálculo de piezas, equipos o estructuras mecánicas.</a>
 
@@ -170,7 +161,7 @@
                         </div>
                         <div class="col-lg-8 col-md-8">
                             <div class="tab-content" id="v-pills-tabContent">
-                                <div class="tab-pane fade" id="v-pills-1" role="tabpanel"
+                                <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel"
                                     aria-labelledby="v-pills-1-tab">
                                     <div class="service_details_info">
                                         <h3>Sistemas de admisión y tratamiento de aire para turbinas a gas y equipos rotativos.</h3>
@@ -213,7 +204,7 @@
                                 </div>
 
 
-                                <div class="tab-pane fade show active" id="v-pills-3" role="tabpanel"
+                                <div class="tab-pane fade" id="v-pills-3" role="tabpanel"
                                     aria-labelledby="v-pills-3-tab">
                                     <div class="service_details_info">
                                         <h3>Scanneado y digitalización en 3D</h3>
@@ -302,7 +293,6 @@
 
     <!--/ contact_location  -->
 
-
     <!-- footer start -->
     <footer class="footer">
         <div class="footer_top">
@@ -380,10 +370,16 @@
           </div>
         </div>
     </footer>
-
   <!-- Modal -->
-  <div class="alert alert-info my_alert" id="alert" role="alert">
-    Texto copiado en portapapeles.
+  <div class="modal fade custom_search_pop" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="serch_form">
+            <input type="text" placeholder="search" >
+            <button type="submit">search</button>
+        </div>
+      </div>
+    </div>
   </div>
     <!-- JS here -->
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>

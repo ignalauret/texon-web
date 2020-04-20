@@ -12,10 +12,6 @@ $(window).on('scroll', function () {
 	}
 });
 
-
-
-
-
 $(document).ready(function(){
 
 // mobile_menu
@@ -230,11 +226,11 @@ center: false,
     $(this).addClass('active');
     event.preventDefault();
 	});
-  
+
   // wow js
   new WOW().init();
 
-  // counter 
+  // counter
   $('.counter').counterUp({
     delay: 10,
     time: 10000
@@ -406,10 +402,45 @@ $(document).ready(function() {
 		}
 	});
 });
+var alert = document.getElementById("alert");
+document.getElementById("mail").onclick = mailCopy;
+var mail2 = document.getElementById("mail2");
+if (typeof(mail2) != 'undefined' && mail2 != null)
+{
+  mail2.onclick = mailCopy;
+}
+
+function mailCopy() {
+  var text = "info@texon-ing.com.ar";
+navigator.clipboard.writeText(text);
+alert.style.visibility = 'visible';
+setTimeout(function() { hide_alert(); }, 3000);
+}
+
+document.getElementById("number").onclick = numberCopy;
+var num2 = document.getElementById("number2");
+if (typeof(num2) != 'undefined' && num2 != null)
+{
+  num2.onclick = numberCopy;
+}
+
+
+function numberCopy() {
+  var text = "+543543402356";
+navigator.clipboard.writeText(text);
+alert.style.visibility = 'visible';
+setTimeout(function() { hide_alert(); }, 3000);
+
+}
+
+function hide_alert() {
+	alert.style.visibility = "hidden";
+}
 
 
 
-//------- Mailchimp js --------//  
+
+//------- Mailchimp js --------//
 function mailChimp() {
   $('#mc_embed_signup').find('form').ajaxChimp();
 }
@@ -436,8 +467,7 @@ mailChimp();
           $('select').niceSelect();
         });
 
-        // prise slider 
-        
+        // prise slider
 
 
 
@@ -445,4 +475,5 @@ mailChimp();
 
 
 
-})(jQuery);	
+
+})(jQuery);
