@@ -511,8 +511,8 @@ h3 {
 /* line 47, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_btn.scss */
 .boxed-btn3:hover {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#456BA5+0,fd8e5e+100 */
-  color: #456BA5 !important;
-  border: 1px solid #456BA5;
+  color: #fff !important;
+  border: 1px solid #fff;
   background: transparent;
 }
 
@@ -1176,7 +1176,7 @@ h3 {
 
 /* line 242, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_header.scss */
 .header-area .main-header-area .main-menu ul li .submenu li:hover a {
-  color: #000;
+  color: #456BA5;
 }
 
 /* line 247, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_header.scss */
@@ -8844,12 +8844,13 @@ h6 {
   font-size: 12px;
 }
 
-.links_interes li {
-  margin-top: 20px;
+.selected_language {
+  font-size: 18px;
+  color: #456BA5;
 }
 
-.language a {
-  font-size: 16px;
+.unselected_language {
+  font-size: 15px;
   color: #596672;
 }
 

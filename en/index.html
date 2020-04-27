@@ -9,24 +9,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/Texon/favicon.ico">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <link rel="stylesheet" href="css/nice-select.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/gijgo.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/themify-icons.css">
+    <link rel="stylesheet" href="../css/nice-select.css">
+    <link rel="stylesheet" href="../css/flaticon.css">
+    <link rel="stylesheet" href="../css/gijgo.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/slicknav.css">
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
@@ -44,17 +44,26 @@
                         <div class="col-xl-4 col-lg-4">
                             <div class="logo">
                                 <a href="index.html">
-                                    <img src="img/logo_head.png" alt="">
+                                    <img src="../img/logo_head.png" alt="">
                                 </a>
                             </div>
                         </div>
                         <div class="col-xl-8 col-md-8">
                             <div class="header_right d-flex align-items-center">
                                 <div class="short_contact_list">
-                                    <ul>
-                                        <li><a href="#"> <i class="fa fa-envelope"></i> info@texon-ing.com.ar</a></li>
-                                        <li><a href="#"> <i class="fa fa-phone"></i> + 54 3543 402356</a></li>
-                                    </ul>
+                                  <ul>
+                                    <li>
+                                      <a href="#" onclick="mailCopy()" id="mail">
+                                        <i class="fa fa-envelope"></i> info@texon-ing.com.ar
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#" onclick="numberCopy()" id="number">
+                                        <i class="fa fa-phone"></i> + 54 3543 402356
+                                      </a>
+                                    </li>
+                                  </ul>
+
                                 </div>
 
                                 <!-- <div class="book_btn d-none d-lg-block">
@@ -72,7 +81,7 @@
                             <div class="col-12 d-block d-lg-none">
                                 <div class="logo">
                                     <a href="index.html">
-                                        <img src="img/logo_head.png" alt="">
+                                        <img src="../img/logo_head.png" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -80,24 +89,18 @@
                                 <div class="main-menu  d-none d-lg-block">
                                     <nav>
                                         <ul id="navigation">
-                                            <li><a  href="index.html">Home</a></li>
-                                            <li><a  href="about.html">Empresa</a></li>
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="about.html">Empresa</a></li>
                                             <li><a href="service.html">Unidades de Negocio <i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
                                                     <li><a href="service_details1.html">Sistemas de admisión y tratamiento de aire</a></li>
                                                     <li><a href="service_details2.html">Diseño y cálculo de recipientes a presión</a></li>
                                                     <li><a href="service_details4.html">Diseño y cálculo de piezas, equipos o estructuras mecánicas.</a></li>
-                                                    <li><a href="service_details3.html">Scanneado y digitalización en 3D</a></li>
+                                                    <li><a href="service_details3.html">Scanneado y digitalización 3D</a></li>
                                                     <li><a href="service_details1.html">Proyectos mecánicos integrales.</a></li>
 
                                                 </ul>
                                             </li>
-                                            <!-- <li><a href="#">blog <i class="ti-angle-down"></i></a>
-                                                <ul class="submenu">
-                                                    <li><a href="blog.html">blog</a></li>
-                                                    <li><a href="single-blog.html">single-blog</a></li>
-                                                </ul>
-                                            </li> -->
                                             <li><a href="contact.html">Contacto</a></li>
                                         </ul>
                                     </nav>
@@ -106,7 +109,9 @@
                             <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                                 <div class="Appointment justify-content-end">
                                     <div class="language">
-                                        <a href="#">Español<img src="img/Texon/es-icon.png" height="35px"/></a>
+                                        <a href="../index.html" class="unselected_language">Spanish<img src="../img/Texon/es-icon.png" height="28px"/></a>
+                                        <a> / </a>
+                                        <a href="#" class="selected_language">English<img src="../img/Texon/us-icon.webp" height="28px"/></a>
                                     </div>
                                 </div>
                             </div>
@@ -156,49 +161,49 @@
                     <div class="service_active owl-carousel">
                         <div class="single_service">
                             <div class="thumb">
-                                <img src="img/Texon/test2.jpeg" alt="">
+                                <img src="../img/Texon/test2.jpeg" alt="">
                             </div>
                             <div class="service_info">
-                                <h3><a href="service_details.html">Sistemas de admisión y tratamiento de aire</a></h3>
-                                <p>Diseño completo de sistemas de admisión estáticos y dinámicos, ingeniería preliminar,
+                                <h3><a href="service_details1.html">Sistemas de admisión y tratamiento de aire</a></h3>
+                                <!-- <p>Diseño completo de sistemas de admisión estáticos y dinámicos, ingeniería preliminar,
                                   ingeniería de detalle, cálculos de resistencia estructural, estudios de dinámica de
-                                  fluidos, etc.</p>
+                                  fluidos, etc.</p> -->
                             </div>
                         </div>
                         <div class="single_service">
                             <div class="thumb">
-                                <img src="img/Texon/test3.jpg" alt="">
+                                <img src="../img/Texon/test3.jpg" alt="">
                             </div>
                             <div class="service_info">
-                                <h3><a href="service_details.html">Diseño y cálculo de piezas, equipos o estructuras mecánicas</a></h3>
-                                <p>Diseño y cálculo general de componentes, ensambles o equipos mecánicos, ya sea bajo sometimientos estáticos, como dinámicos, bajo influencia de temperatura.</p>
+                                <h3><a href="service_details4.html">Diseño y cálculo de piezas, equipos o estructuras mecánicas</a></h3>
+                                <!-- <p>Diseño y cálculo general de componentes, ensambles o equipos mecánicos, ya sea bajo sometimientos estáticos, como dinámicos, bajo influencia de temperatura.</p> -->
                             </div>
                         </div>
                         <div class="single_service">
                             <div class="thumb">
-                                <img src="img/Texon/test4.jpg" alt="">
+                                <img src="../img/Texon/test4.jpg" alt="">
                             </div>
                             <div class="service_info">
-                                <h3><a href="service_details.html">Diseño y cálculo de recipientes a presión</a></h3>
-                                <p>Diseño y cálculo de recipientes a presión e intercambiadores de calor, considerando todos los aspectos detallados en el código ASME VIII.</p>
+                                <h3><a href="service_details2.html">Diseño y cálculo de recipientes a presión</a></h3>
+                                <!-- <p>Diseño y cálculo de recipientes a presión e intercambiadores de calor, considerando todos los aspectos detallados en el código ASME VIII.</p> -->
                             </div>
                         </div>
                         <div class="single_service">
                             <div class="thumb">
-                                <img src="img/Texon/test1.jpg" alt="">
+                                <img src="../img/Texon/test1.jpg" alt="">
                             </div>
                             <div class="service_info">
-                                <h3><a href="service_details.html">Scanneado y digitalización en 3D</a></h3>
-                                <p>Trabajamos con tecnologias de precisiones de 100 a 40 micrones, con la garantia de que obtendran el proyecto de la mayor calidad en cualquier lugar del mundo.</p>
+                                <h3><a href="service_details3.html">Scanneado y digitalización 3D</a></h3>
+                                <!-- <p>Trabajamos con tecnologias de precisiones de 100 a 40 micrones, con la garantia de que obtendran el proyecto de la mayor calidad en cualquier lugar del mundo.</p> -->
                             </div>
                         </div>
                         <div class="single_service">
                             <div class="thumb">
-                                <img src="img/Texon/test6.jpeg" alt="">
+                                <img src="../img/Texon/test6.jpeg" alt="">
                             </div>
                             <div class="service_info">
-                                <h3><a href="service_details.html">Proyectos mecánicos integrales.</a></h3>
-                                <p>Proyectos de infraestructura productiva general, principalmente en áreas de energía, gas, petróleo, minería y cemento.</p>
+                                <h3><a href="service_details1.html">Proyectos mecánicos integrales.</a></h3>
+                                <!-- <p>Proyectos de infraestructura productiva general, principalmente en áreas de energía, gas, petróleo, minería y cemento.</p> -->
                             </div>
                         </div>
                     </div>
@@ -234,7 +239,7 @@
                     <div class="location_left">
                         <div class="logo">
                             <a href="index.html">
-                                <img src="img/logo_head.png" alt="">
+                                <img src="../img/logo_head.png" alt="">
                             </a>
                         </div>
                         <!-- <ul>
@@ -247,13 +252,13 @@
                 </div>
                 <div class="col-xl-3 col-md-3">
                     <div class="single_location">
-                        <h3> <img src="img/icon/location_icon.png" alt="" height="25px"> Ubicación</h3>
+                        <h3> <img src="../img/icon/location_icon.png" alt="" height="25px"> Ubicación</h3>
                         <p>Ramón y Cajal 6141 – Argüello - Córdoba - Argentina</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-3">
                     <div class="single_location">
-                        <h3> <img src="img/icon/contact_icon.png" alt="" height="25px"> Contacto</h3>
+                        <h3> <img src="../img/icon/contact_icon.png" alt="" height="25px"> Contacto</h3>
                         <p>Tel. + 54 3543 402356 <br> info@texon-ing.com.ar</p>
                     </div>
                 </div>
@@ -278,7 +283,7 @@
                                 <li><a href="service_details1.html">Sistemas de admisión y tratamiento de aire</a></li>
                                 <li><a href="service_details2.html">Diseño y cálculo de recipientes a presión</a></li>
                                 <li><a href="service_details4.html">Diseño y cálculo de piezas, equipos o estructuras mecánicas.</a></li>
-                                <li><a href="service_details3.html">Scanneado y digitalización en 3D</a></li>
+                                <li><a href="service_details3.html">Scanneado y digitalización 3D</a></li>
                                 <li><a href="service_details1.html">Proyectos mecánicos integrales.</a></li>
                             </ul>
 
@@ -301,15 +306,15 @@
                                 Industries
                             </h3>
                             <ul>
-                                <li><a href="#">Energia</a></li>
-                                <li><a href="#">Gas y Petróleo</a></li>
-                                <li><a href="#">Turbinas a Gas</a></li>
-                                <li><a href="#">Cementeras</a></li>
-                                <li><a href="#">Automotrices</a></li>
-                                <li><a href="#">Mineras</a></li>
-                                <li><a href="#">Metalurgicas</a></li>
-                                <li><a href="#">Mecanizados</a></li>
-                                <li><a href="#">Estampado de chapa</a></li>
+                                <li><a href="about.html">Energia</a></li>
+                                <li><a href="about.html">Gas y Petróleo</a></li>
+                                <li><a href="about.html">Turbinas a Gas</a></li>
+                                <li><a href="about.html">Cementeras</a></li>
+                                <li><a href="about.html">Automotrices</a></li>
+                                <li><a href="about.html">Mineras</a></li>
+                                <li><a href="about.html">Metalurgicas</a></li>
+                                <li><a href="about.html">Mecanizados</a></li>
+                                <li><a href="about.html">Estampado de chapa</a></li>
                             </ul>
                         </div>
                     </div>
@@ -319,9 +324,9 @@
                                 Links de interes
                             </h3>
                             <ul>
-                                <li><a href="https://www.asme.org/" target="_blank"><img src="img/Texon/logo1.png" alt="" width="200px"></a></li>
-                                <li><a href="http://ciec.org.ar/contacto.php" target="_blank"><img src="img/Texon/logo2.png" alt="" width="200px"></a></li>
-                                <li><a href="https://www.3ds.com/es/" target="_blank"><img src="img/Texon/logo3.png" alt="" width="200px"></a></li>
+                                <li><a href="https://www.asme.org/" target="_blank"><img src="../img/Texon/logo1.png" alt="" width="200px"></a></li>
+                                <li><a href="http://ciec.org.ar/contacto.php" target="_blank"><img src="../img/Texon/logo_ciec.jpg" alt="" width="200px"></a></li>
+                                <li><a href="https://www.3ds.com/es/" target="_blank"><img src="../img/Texon/logo3.png" alt="" width="200px"></a></li>
                             </ul>
                         </div>
                     </div>
@@ -344,49 +349,42 @@
 <!-- Button trigger modal -->
 
   <!-- Modal -->
-  <div class="modal fade custom_search_pop" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="serch_form">
-            <input type="text" placeholder="search" >
-            <button type="submit">search</button>
-        </div>
-      </div>
-    </div>
+  <div class="alert alert-info my_alert" id="alert" role="alert">
+    Texto copiado en portapapeles.
   </div>
 
     <!-- JS here -->
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/ajax-form.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/scrollIt.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/nice-select.min.js"></script>
-    <script src="js/jquery.slicknav.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/plugins.js"></script>
+    <script src="../js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="../js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/isotope.pkgd.min.js"></script>
+    <script src="../js/ajax-form.js"></script>
+    <script src="../js/waypoints.min.js"></script>
+    <script src="../js/jquery.counterup.min.js"></script>
+    <script src="../js/imagesloaded.pkgd.min.js"></script>
+    <script src="../js/scrollIt.js"></script>
+    <script src="../js/jquery.scrollUp.min.js"></script>
+    <script src="../js/wow.min.js"></script>
+    <script src="../js/nice-select.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/plugins.js"></script>
     <!-- <script src="js/gijgo.min.js"></script> -->
-    <script src="js/slick.min.js"></script>
+    <script src="../js/slick.min.js"></script>
 
 
 
     <!--contact js-->
-    <script src="js/contact.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/mail-script.js"></script>
+    <script src="../js/contact.js"></script>
+    <script src="../js/jquery.ajaxchimp.min.js"></script>
+    <script src="../js/jquery.form.js"></script>
+    <script src="../js/jquery.validate.min.js"></script>
+    <script src="../js/mail-script.js"></script>
 
 
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
 
 
 
